@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nintendo", "Nintendo\Nintendo.csproj", "{DB3CCBC5-E442-4DDB-A1D3-7048347F45D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB3CCBC5-E442-4DDB-A1D3-7048347F45D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3CCBC5-E442-4DDB-A1D3-7048347F45D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3CCBC5-E442-4DDB-A1D3-7048347F45D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3CCBC5-E442-4DDB-A1D3-7048347F45D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D7A341D-1C66-4673-81C1-676B899ED859}
+	EndGlobalSection
+EndGlobal
