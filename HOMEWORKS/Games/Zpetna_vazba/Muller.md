@@ -1,0 +1,1 @@
+dobrý ale nevyznal jsem se, (Tobi)
