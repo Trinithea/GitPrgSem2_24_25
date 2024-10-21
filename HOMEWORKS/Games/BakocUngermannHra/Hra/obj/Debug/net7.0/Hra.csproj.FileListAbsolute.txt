@@ -1,0 +1,10 @@
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/bin/Debug/net7.0/Hra
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/bin/Debug/net7.0/Hra.dll
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/bin/Debug/net7.0/Hra.pdb
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/Hra.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/Hra.AssemblyInfoInputs.cache
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/Hra.AssemblyInfo.cs
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/Hra.csproj.CoreCompileInputs.cache
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/Hra.dll
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/refint/Hra.dll
+/Users/vitungermann/Desktop/seminář programování/Hra/Hra/obj/Debug/net7.0/Hra.pdb
