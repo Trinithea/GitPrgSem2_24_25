@@ -1,0 +1,4 @@
+- jednoduchá hra
+- nenašel jsem žádný velký problém
+- hra splňuje vše co má
+- 150/150
