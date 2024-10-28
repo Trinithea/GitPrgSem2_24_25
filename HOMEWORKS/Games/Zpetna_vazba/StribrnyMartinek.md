@@ -10,7 +10,7 @@
 
 ## Špatné stránky
 - Wikina by mohla být generována dynamicky, ale byl na to týden, takže co budem :D
-- Nemůžu pojmenovávat svoje další postavy
+- ~~Nemůžu pojmenovávat svoje další postavy~~
 - Je možná trochu nevybalancovaná a může se z toho stát "zmáčkni enter simulátor" (nejspíš jako většina, opět, čas)
 
 ## Komentáře
