@@ -1,0 +1,4 @@
+- vypadá propracovaně
+- dobře implementovaný pohyb
+- bohužel není intuitivní jak zvolit velikost hracího pole
+- zloduch nebyl v hracím poli
