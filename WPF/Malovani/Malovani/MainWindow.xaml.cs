@@ -11,6 +11,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
 using Color = System.Drawing.Color;
+using System.IO;
 
 namespace Malovani
 {
@@ -45,6 +46,7 @@ namespace Malovani
             {
                 // Save document
                 string filename = dlg.FileName;
+                SaveCanvasAsImage(DrawingCanvas, filename);
             }
         }
 
@@ -64,6 +66,25 @@ namespace Malovani
             {
                 // Open document
                 string filename = dialog.FileName;
+
+                // Load the selected image
+                var image = new Image
+                {
+                    Source = new BitmapImage(new Uri(filename)),
+                    Width = DrawingCanvas.ActualWidth,  // Adjust as needed
+                    Height = DrawingCanvas.ActualHeight, // Adjust as needed
+                    Stretch = Stretch.Uniform  // Adjust to control how the image scales
+                };
+
+                // Optionally clear the canvas before adding the new image
+                DrawingCanvas.Children.Clear();
+
+                // Add the image to the canvas
+                DrawingCanvas.Children.Add(image);
+
+                // Position the image (optional, if needed)
+                Canvas.SetLeft(image, 0); // X coordinate
+                Canvas.SetTop(image, 0);  // Y coordinate
             }
         }
 
@@ -121,8 +142,40 @@ namespace Malovani
                 _isDrawing = false;
             }
         }
+        public void SaveCanvasAsImage(Canvas canvas, string filePath)
+        {
+            // Set the size of the canvas to be rendered
+            var size = new System.Windows.Size(canvas.ActualWidth, canvas.ActualHeight);
+            if (size.Width == 0 || size.Height == 0)
+            {
+                throw new InvalidOperationException("Canvas size is zero.");
+            }
 
-        
+            // Measure and arrange the canvas
+            canvas.Measure(size);
+            canvas.Arrange(new Rect(size));
+
+            // Create a render target bitmap
+            var renderBitmap = new RenderTargetBitmap(
+                (int)size.Width,
+                (int)size.Height,
+                96, // DPI X
+                96, // DPI Y
+                PixelFormats.Pbgra32);
+
+            // Render the canvas to the bitmap
+            renderBitmap.Render(canvas);
+
+            // Encode the bitmap to a file (e.g., PNG format)
+            var encoder = new PngBitmapEncoder();
+            encoder.Frames.Add(BitmapFrame.Create(renderBitmap));
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                encoder.Save(fileStream);
+            }
+        }
+
     }
 
 }

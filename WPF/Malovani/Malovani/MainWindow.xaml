@@ -29,7 +29,7 @@
                 <MenuItem Header="Upravit" FontSize="12" Margin="5"/>
             </Menu>
             <StackPanel Grid.Row="1" Orientation="Horizontal" >
-                <Image Margin="10,10,0,10" Source="/brush.png"/>
+                <Image Margin="10,10,0,10" Source="/resources/brush.png"/>
                 <Label Content="Tloušťka štětce: " Margin="5,5,5,5"/>
                 <Slider x:Name="sliderThickness" Width="120" Margin="5,5,5,5" VerticalAlignment="Center" Minimum="1" IsSnapToTickEnabled="True" SmallChange="1"/>
                 <Label Content="Barva štětce: " Margin="5,5,5,5"/>

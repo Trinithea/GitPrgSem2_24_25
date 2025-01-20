@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="brush.png" />
+    <None Remove="resources\brush.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="brush.png" />
+    <Resource Include="resources\brush.png" />
   </ItemGroup>
 
 </Project>
