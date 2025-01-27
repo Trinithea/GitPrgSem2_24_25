@@ -1,0 +1,46 @@
+﻿<Window x:Class="KlepniKrtka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlepniKrtka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Content="Čtverečková hra" FontSize="50" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Button Name="btnBegginer" Content="Begginer" Margin="5,5,5,5" />
+            <Button Name="btnAdvanced" Content="Advacned" Margin="5,5,5,5" />
+            <Button Name="btnMaster" Content="Master" Margin="5,5,5,5"  />
+        </StackPanel>
+        <Grid x:Name="gridGame" Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+        </Grid>
+        <Label Name ="lblTime" Grid.Row="2" Grid.Column="1" Content="01:00" HorizontalAlignment="Center" FontSize="20"/>
+    </Grid>
+</Window>
