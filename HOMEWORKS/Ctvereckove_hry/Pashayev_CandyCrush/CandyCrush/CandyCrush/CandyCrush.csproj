@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1.png" />
+    <None Remove="fonts\Candyfont.ttf" />
+    <None Remove="logo.png" />
+    <None Remove="tesco.jpg" />
+    <None Remove="tesco1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1.png" />
+    <Resource Include="fonts\Candyfont.ttf" />
+    <Resource Include="logo.png" />
+    <Resource Include="tesco.jpg" />
+    <Resource Include="tesco1.jpg" />
+  </ItemGroup>
+
+</Project>

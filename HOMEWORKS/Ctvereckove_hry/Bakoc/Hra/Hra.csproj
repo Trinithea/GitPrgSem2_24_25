@@ -1,0 +1,300 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\gomoku\O.png" />
+    <None Remove="resources\gomoku\X.png" />
+    <None Remove="resources\main\explodingatoms.png" />
+    <None Remove="resources\main\gomoku.png" />
+    <None Remove="resources\main\minesweeper.png" />
+    <None Remove="resources\main\pexeso.png" />
+    <None Remove="resources\minesweeper\0_display.png" />
+    <None Remove="resources\minesweeper\1_cell.png" />
+    <None Remove="resources\minesweeper\1_display.png" />
+    <None Remove="resources\minesweeper\2_cell.png" />
+    <None Remove="resources\minesweeper\2_display.png" />
+    <None Remove="resources\minesweeper\3_cell.png" />
+    <None Remove="resources\minesweeper\3_display.png" />
+    <None Remove="resources\minesweeper\4_cell.png" />
+    <None Remove="resources\minesweeper\4_display.png" />
+    <None Remove="resources\minesweeper\5_cell.png" />
+    <None Remove="resources\minesweeper\5_display.png" />
+    <None Remove="resources\minesweeper\6_cell.png" />
+    <None Remove="resources\minesweeper\6_display.png" />
+    <None Remove="resources\minesweeper\7_cell.png" />
+    <None Remove="resources\minesweeper\7_display.png" />
+    <None Remove="resources\minesweeper\8_cell.png" />
+    <None Remove="resources\minesweeper\8_display.png" />
+    <None Remove="resources\minesweeper\9_display.png" />
+    <None Remove="resources\minesweeper\border_bottom_left.png" />
+    <None Remove="resources\minesweeper\border_bottom_right.png" />
+    <None Remove="resources\minesweeper\border_horizontal.png" />
+    <None Remove="resources\minesweeper\border_intersection_left.png" />
+    <None Remove="resources\minesweeper\border_intersection_right.png" />
+    <None Remove="resources\minesweeper\border_top_left.png" />
+    <None Remove="resources\minesweeper\border_top_right.png" />
+    <None Remove="resources\minesweeper\border_vertical.png" />
+    <None Remove="resources\minesweeper\cell.png" />
+    <None Remove="resources\minesweeper\click.wav" />
+    <None Remove="resources\minesweeper\empty_cell.png" />
+    <None Remove="resources\minesweeper\exploded_cell.png" />
+    <None Remove="resources\minesweeper\explosion.wav" />
+    <None Remove="resources\minesweeper\flag.wav" />
+    <None Remove="resources\minesweeper\flag_cell.png" />
+    <None Remove="resources\minesweeper\mine_cell.png" />
+    <None Remove="resources\minesweeper\not_mine_cell.png" />
+    <None Remove="resources\minesweeper\reset_button.png" />
+    <None Remove="resources\minesweeper\start.wav" />
+    <None Remove="resources\minesweeper\win.wav" />
+    <None Remove="resources\pexeso\0.png" />
+    <None Remove="resources\pexeso\1.png" />
+    <None Remove="resources\pexeso\10.png" />
+    <None Remove="resources\pexeso\11.png" />
+    <None Remove="resources\pexeso\12.png" />
+    <None Remove="resources\pexeso\13.png" />
+    <None Remove="resources\pexeso\14.png" />
+    <None Remove="resources\pexeso\15.png" />
+    <None Remove="resources\pexeso\16.png" />
+    <None Remove="resources\pexeso\17.png" />
+    <None Remove="resources\pexeso\18.png" />
+    <None Remove="resources\pexeso\19.png" />
+    <None Remove="resources\pexeso\2.png" />
+    <None Remove="resources\pexeso\20.png" />
+    <None Remove="resources\pexeso\21.png" />
+    <None Remove="resources\pexeso\22.png" />
+    <None Remove="resources\pexeso\23.png" />
+    <None Remove="resources\pexeso\3.png" />
+    <None Remove="resources\pexeso\4.png" />
+    <None Remove="resources\pexeso\5.png" />
+    <None Remove="resources\pexeso\6.png" />
+    <None Remove="resources\pexeso\7.png" />
+    <None Remove="resources\pexeso\8.png" />
+    <None Remove="resources\pexeso\9.png" />
+    <None Remove="resources\pexeso\backside.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="resources\gomoku\O.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gomoku\X.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\main\explodingatoms.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\main\gomoku.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\main\minesweeper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\main\pexeso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\0_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\1_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\1_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\2_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\2_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\3_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\3_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\4_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\4_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\5_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\5_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\6_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\6_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\7_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\7_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\8_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\8_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\9_display.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_bottom_left.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_bottom_right.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_horizontal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_intersection_left.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_intersection_right.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_top_left.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_top_right.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\border_vertical.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\click.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\empty_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\exploded_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\explosion.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\flag.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\flag_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\mine_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\not_mine_cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\reset_button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\start.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\minesweeper\win.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\15.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\17.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\18.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\19.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\20.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\21.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\22.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\23.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\pexeso\9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="resources\pexeso\backside.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>

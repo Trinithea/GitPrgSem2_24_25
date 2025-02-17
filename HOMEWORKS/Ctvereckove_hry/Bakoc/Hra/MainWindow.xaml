@@ -1,0 +1,246 @@
+﻿<Window x:Class="Hra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hra"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="556" Width="896">
+
+
+    <Window.Resources>
+
+
+
+
+        <!-- Custom Button Style -->
+        <Style x:Key="ImageButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="5"/>
+
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        
+                        <Grid>
+                            <Border BorderBrush="#424242" BorderThickness="1" Opacity="1" >
+                            <Grid Background="{TemplateBinding Background}" Name="background" >
+                                <Rectangle Stretch="Fill" Fill="Black" Opacity="0" Name="blackRect"></Rectangle>
+                                <Grid.Effect>
+                                    <BlurEffect Radius="0"/>
+                                </Grid.Effect>
+                            </Grid>
+                            </Border>
+                            <TextBlock Text="{TemplateBinding Content}" Name="content" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Foreground="{TemplateBinding Foreground}"/>
+
+
+
+
+
+                            
+                        </Grid>
+                            
+                        <ControlTemplate.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="True">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="background"
+                                                Storyboard.TargetProperty="Effect.Radius"
+                                                 To="10" Duration="0:0:0.8" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="blackRect"
+                                                Storyboard.TargetProperty="Opacity"
+                                                 To="0.5" Duration="0:0:0.7" BeginTime="0:0:0.1" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+                                            </DoubleAnimation>
+
+                                            <ColorAnimation
+                                                Storyboard.TargetName="content"
+                                                Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                 To="White" Duration="0:0:0.7" BeginTime="0:0:0.2" AutoReverse="False"/>
+
+
+                                            <DoubleAnimation
+                                                
+                                                Storyboard.TargetProperty="Width"
+                                                 To="110" Duration="0:0:3" BeginTime="0:0:0.1" AutoReverse="False">
+                                            <DoubleAnimation.EasingFunction>
+                                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                            </DoubleAnimation.EasingFunction>
+
+                                            </DoubleAnimation>
+
+                                            <DoubleAnimation
+    
+                                                Storyboard.TargetProperty="Height"
+                                                 To="110" Duration="0:0:3" BeginTime="0:0:0.1" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+
+                                            </DoubleAnimation>
+
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="content"
+                                                Storyboard.TargetProperty="FontSize"
+                                                 To="12" Duration="0:0:3" BeginTime="0:0:0.1" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+
+                                            </DoubleAnimation>
+
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                    
+                                </DataTrigger.EnterActions>
+                                <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="background"
+                                                Storyboard.TargetProperty="Effect.Radius"
+                                                 To="0" Duration="0:0:0.3" BeginTime="0:0:0.1" AutoReverse="False"/>
+
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="blackRect"
+                                                Storyboard.TargetProperty="Opacity"
+                                                 To="0" Duration="0:0:0.3" AutoReverse="False"/>
+
+                                            <ColorAnimation
+                                                Storyboard.TargetName="content"
+                                                Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                 To="Transparent" Duration="0:0:0.4" AutoReverse="False"/>
+
+                                            <DoubleAnimation
+    
+                                                Storyboard.TargetProperty="Width"
+                                                 To="100" Duration="0:0:0.7" BeginTime="0:0:0.1" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+                                                
+                                            </DoubleAnimation>
+                                            <DoubleAnimation
+    
+                                                Storyboard.TargetProperty="Height"
+                                                 To="100" Duration="0:0:0.7" BeginTime="0:0:0.1" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+
+                                            </DoubleAnimation>
+
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="content"
+                                                Storyboard.TargetProperty="FontSize"
+                                                 To="10" Duration="0:0:0.7" BeginTime="0:0:0.1" AutoReverse="False">
+                                                <DoubleAnimation.EasingFunction>
+                                                    <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                                                </DoubleAnimation.EasingFunction>
+
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+
+                
+
+
+            </Style.Triggers>
+
+        </Style>
+
+        
+
+
+
+
+    </Window.Resources>
+
+
+
+    <Viewbox Stretch="Uniform">
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <ContentControl Width="115" Height="115" Grid.Column="0" Grid.Row="0">
+                <Button Style="{StaticResource ImageButtonStyle}" Content="Exploding Atoms&#xA;2 👤" HorizontalAlignment="Center" VerticalAlignment="Center" Click="PlayExplodingAtoms">
+                <Button.Background>
+                    <ImageBrush ImageSource="resources/main/explodingatoms.png"></ImageBrush>
+
+                </Button.Background>
+
+            </Button>
+        </ContentControl>
+        
+        <ContentControl Width="115" Height="115" Grid.Column="1" Grid.Row="0">
+                <Button Style="{StaticResource ImageButtonStyle}" Content="Gomoku&#xA;2 👤" HorizontalAlignment="Center" VerticalAlignment="Center" Click="PlayGomoku">
+                <Button.Background>
+                    <ImageBrush ImageSource="resources/main/gomoku.png"></ImageBrush>
+
+                </Button.Background>
+
+            </Button>
+        </ContentControl>
+
+
+        <ContentControl Width="115" Height="115" Grid.Column="0" Grid.Row="1">
+                <Button Style="{StaticResource ImageButtonStyle}" Content="Minesweeper&#xA;1 👤" HorizontalAlignment="Center" VerticalAlignment="Center" Click="PlayMinesweeper">
+                <Button.Background>
+                    <ImageBrush ImageSource="resources/main/minesweeper.png"></ImageBrush>
+
+                </Button.Background>
+
+            </Button>
+        </ContentControl>
+
+        <ContentControl Width="115" Height="115" Grid.Column="1" Grid.Row="1">
+                <Button Style="{StaticResource ImageButtonStyle}" Content="Pexeso&#xA;2-6 👤" HorizontalAlignment="Center" VerticalAlignment="Center" Click="PlayPexeso">
+                <Button.Background>
+                    <ImageBrush ImageSource="resources/main/pexeso.png"></ImageBrush>
+
+                </Button.Background>
+
+            </Button>
+        </ContentControl>
+
+
+
+
+    </Grid>
+    </Viewbox>
+</Window>

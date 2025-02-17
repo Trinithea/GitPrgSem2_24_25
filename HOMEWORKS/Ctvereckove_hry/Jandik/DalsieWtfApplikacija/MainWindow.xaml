@@ -1,0 +1,44 @@
+﻿<Window x:Class="DalsieWtfApplikacija.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DalsieWtfApplikacija"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Name="Textovac" Content="Pane Drahoši, máte první výkop!" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="30" Margin="0 0 0 320"/>
+        <CheckBox Name="Svycarovac" Content="Položit švýcarké pole" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="30" Margin="0 0 0 250" Checked="CH" Unchecked="UNCH"/>
+        <Label Name="Lyberal" Content="{Binding L}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="30" Margin="500 0 0 320"/>
+        <Label Name="Kominista" Content="Komínista: 5 šv. polí" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="30" Margin="500 0 0 250"/>
+        <Grid Name="MrizJakNaPankraci" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="220">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+    </Grid>
+</Window>
